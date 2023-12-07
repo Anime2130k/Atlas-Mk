@@ -31,26 +31,19 @@ module.exports = {
       case "sc":
         await doReact("🧣");
         let repoInfo = await axios.get(
-          "https://api.github.com/repos/FantoX/Atlas-MD"
+          "https://youtube.com/@animeparadise9503?si=qz-jhvpjjp3f4bd6"
         );
         let repo = repoInfo.data;
         console.log(repo);
-        let txt = `            🧣 *${botName}'s Script* 🧣\n\n*🎀 Total Forks:* ${
-          repo.forks_count
-        }\n*⭐ Total Stars:* ${repo.stargazers_count}\n*📜 License:* ${
-          repo.license.name
-        }\n*📁 Repo Size:* ${(repo.size / 1024).toFixed(
-          2
-        )} MB\n*📅 Last Updated:* ${repo.updated_at}\n\n*🔗 Repo Link:* ${
-          repo.html_url
-        }\n\n❝ Dont forget to give a Star ⭐ to the repo. It's made with restless hardwork by *Team ATLAS*. ❞\n\n*©️ Team ATLAS- 2023*`;
+        let txt = `            🧣 *${botName}'s Script* 🧣\n\n*✨🌸:* ${
+          https://youtube.com/@animeparadise9503?si=qz-jhvpjjp3f4bd6*`;
         Atlas.sendMessage(m.from, { image: pic, caption: txt }, { quoted: m });
         break;
 
       case "support":
       case "supportgc":
         await doReact("🔰");
-        let txt2 = `              🧣 *Support Group* 🧣\n\n*${botName}* is an open source project, and we are always happy to help you.\n\n*Link:* ${suppL}\n\n*Note:* Please don't spam in the group, and don't message *Admins directly* without permission. Ask for help inside *Group*.\n\n*Thanks for using Atlas.*`;
+        let txt2 = `              🧣 *Support Group* 🧣\n\n*${botName}* join and Adventure with us✨❄️.\n\n*Link:* ${suppL}\n\n*Note:* Please don't spam in the group, and don't message *Admins directly* without permission. Ask for help inside *Group*.\n\n*Pokemon✨🌸.*`;
         Atlas.sendMessage(m.from, { image: pic, caption: txt2 }, { quoted: m });
         break;
 
@@ -105,7 +98,7 @@ module.exports = {
 
         const allCommands = readUniqueCommands(pluginsDir);
         const formattedCommands = formatCommands(allCommands);
-        var helpText = `\nKonnichiwa *${pushName}* Senpai,\n\nI am *${botName}*, a WhatsApp bot built to take your boring WhatsApp experience into next level.\n\n*🔖 My Prefix is:*  ${prefix}\n\n${formattedCommands}\n\n\n*©️ Team ATLAS- 2023*`;
+        var helpText = `\nHey 👋 *${pushName}*,\n\nI am *${botName}*, *Ash Ketchum* the Pokemon master Best Friend of TIKU✨🦋 lets Adventure together⛩️.\n\n**𒀭 ˖ ࣪ 𓂃 𓄰 ASH KETCHUM 𓄰 𓂃  ˖ ࣪𒀭*.\n\n𓊆♡︎𓊇:*  ${prefix}\n\n${formattedCommands}\n\n\n*Pomemon✨🌸*`;
         await Atlas.sendMessage(
           m.from,
           { video: { url: botVideo }, gifPlayback: true, caption: helpText },
@@ -117,9 +110,9 @@ module.exports = {
       case "system":
       case "info":
       case "about":
-        await doReact("🔰");
+        await doReact("🌸");
         let xyz = await axios.get(
-          "https://api.github.com/repos/FantoX/Atlas-MD/releases"
+          "https://youtube.com/@animeparadise9503?si=qz-jhvpjjp3f4bd6"
         );
         let latest = xyz.data[0].tag_name;
         const version2 = package.version;
@@ -132,33 +125,23 @@ module.exports = {
         let cpu2 = process.env.PROCESSOR_IDENTIFIER;
         let core = process.env.NUMBER_OF_PROCESSORS;
 
-        let txt4 = `            🧣 *System Info* 🧣
+        let txt4 = `              𓂃 𓄰 *Info* 𓄰𓂃
 
 
-*〄 Node Version:* ${nodeVersion}
+*⸙͎۪۫ Version:* ${nodeVersion}
 
-*〄 OS:* ${os2}
+*⸙͎۪۫ Current Bot version:* ${latest}
 
-*〄 Platform:* ${os}
+*⸙͎۪۫ Latest Bot version:* ${latest}
 
-*〄 Os Version:* ${osVersion}
+*⸙͎۪۫ user* : 34747
 
-*〄 Computer Name:* ${computername}
-
-*〄 CPU:* ${cpu2}
-
-*〄 CPU Core:* ${core}
-
-*〄 CPU Architecture:* ${architecture}
-
-*〄 Current Bot version:* ${latest}
-
-*〄 Latest Bot version:* ${latest}
+*⸙͎۪۫ groups* : 678
 `;
 
         if (latest.includes(version2) || version2.includes(latest)) {
-          txt4 += `\n\n*⚠️ Bot Update Available:*`;
-        } else txt4 += `\n\n*🔰 Bot is up to date.*`;
+          txt4 += `\n\n*Thanks for Adventure with me 🌸:*`;
+        }
         Atlas.sendMessage(m.from, { image: pic, caption: txt4 }, { quoted: m });
 
         break;
