@@ -29,7 +29,7 @@ module.exports = {
     switch (inputCMD) {
       case "script":
       case "sc":
-        await doReact("🧣");
+        await doReact("🌸");
         let repoInfo = await axios.get(
           "https://youtube.com/@animeparadise9503?si=qz-jhvpjjp3f4bd6"
         );
@@ -42,7 +42,7 @@ module.exports = {
 
       case "support":
       case "supportgc":
-        await doReact("🔰");
+        await doReact("🌸");
         let txt2 = `              🧣 *Support Group* 🧣\n\n*${botName}* join and Adventure with us✨❄️.\n\n*Link:* ${suppL}\n\n*Note:* Please don't spam in the group, and don't message *Admins directly* without permission. Ask for help inside *Group*.\n\n*Pokemon✨🌸.*`;
         Atlas.sendMessage(m.from, { image: pic, caption: txt2 }, { quoted: m });
         break;
